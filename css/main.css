@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 5em;
+    text-decoration: underline;
+    animation-name: color;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+input {
+    width: 150px;
+    height: 30px;
+    font-size: 1em;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    outline: 1px solid #000;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+input:active {
+    background-color: #000;
+    color: #fff;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#colorVer {
+    height: 77.3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+@keyframes color {
+
+    0% {
+        color: red;
+    }
+
+    10% {
+        color: orange;
+    }
+
+    20% {
+        color: yellow;
+    }
+
+    30% {
+        color: greenyellow;
+    }
+
+    40% {
+        color: green;
+    }
+
+    50% {
+        color: cyan;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    70% {
+        color: blueviolet;
+    }
+
+    80% {
+        color: fuchsia;
+    }
+
+    90% {
+        color: pink;
+    }
+
+    100% {
+        color: red;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        margin-bottom: 20px;
+    }
+
+    input:last-child {
+        margin-bottom: 0;
+    }
+
+}
